@@ -1,78 +1,71 @@
+def romannumeralgenerator(rootint: int):
+    """ converts a entered interger into a string of roman numerals """
 
-class RomanNumeralGenerator:
+    rsting = [] #type: list
+    while rootint > 0:
+        if rootint >= 1000:
+            rootint -= 1000
+            rsting.append('M')
+            continue
 
-    def __init__(self) -> None:
-        pass
+        if rootint >= 900:
+            rootint -= 900
+            rsting.append('CM')
+            continue
 
-    def convertNumber(self, rootInt: int) -> str:
-        """ converts numbers from base to roman"""
+        if rootint >= 500:
+            rootint -= 500
+            rsting.append('D')
+            continue
 
-        rsting = []
-        while rootInt > 1:
-            if rootInt > 1000:
-                rootInt -= 1000
-                rsting.append('M')
-                continue
+        if rootint >= 400:
+            rootint -= 400
+            rsting.append('CD')
+            continue
 
-            if rootInt > 900:
-                rootInt -= 900
-                rsting.append('CM')
-                continue
+        if rootint >= 100:
+            rootint -= 100
+            rsting.append('C')
+            continue
 
-            if rootInt > 500:
-                rootInt -= 500
-                rsting.append('D')
-                continue
-
-            if rootInt > 400:
-                rootInt -= 400
-                rsting.append('CD')
-                continue
-
-            if rootInt > 100:
-                rootInt -= 100
-                rsting.append('C')
-                continue
-
-            if rootInt > 90:
-                rootInt -= 90
-                rsting.append('XC')
-                continue
+        if rootint >= 90:
+            rootint -= 90
+            rsting.append('XC')
+            continue
             
-            if rootInt > 50:
-                rootInt -= 50
-                rsting.append('L')
-                continue
+        if rootint >= 50:
+            rootint -= 50
+            rsting.append('L')
+            continue
 
-            if rootInt > 40:
-                rootInt -= 40
-                rsting.append('XL')
-                continue
+        if rootint >= 40:
+            rootint -= 40
+            rsting.append('XL')
+            continue
 
-            if rootInt > 10:
-                rootInt -= 10
-                rsting.append('X')
-                continue
+        if rootint >= 10:
+            rootint -= 10
+            rsting.append('X')
+            continue
 
-            if rootInt > 9:
-                rootInt -= 9
-                rsting.append('IX')
-                continue
+        if rootint >= 9:
+            rootint -= 9
+            rsting.append('IX')
+            continue
 
-            if rootInt > 5:
-                rootInt -= 5
-                rsting.append('V')
-                continue
+        if rootint >= 5:
+            rootint -= 5
+            rsting.append('V')
+            continue
 
-            if rootInt > 4:
-                rootInt -= 4
-                rsting.append('IV')
-                continue
+        if rootint >= 4:
+            rootint -= 4
+            rsting.append('IV')
+            continue
 
-            if rootInt > 1:
-                rootInt -= 1
-                rsting.append('I')
-                continue
+        if rootint >= 1:
+            rootint -= 1
+            rsting.append('I')
+            continue
 
-
-        return ''.join(rsting)
+    return ''.join(rsting)
