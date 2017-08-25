@@ -17,5 +17,12 @@ by writing each file to the server, this meant that while the first request woul
 because the issue was something to do with the performance it was tested manually over 25 requests (me refreshing the page) using a gallery that had 15 images and timing requests completion time and putting into a spread sheet and there was compassion with times taken before fixed before. I would in the feature be useing somthing like `nightwatch` to evulate to test,
 
 ## Codeing Challenge
-I have been asked to make a tool that will convert a interger between 1 and 3999 to a sting of the entered interger as repersented by the romen system.
+I have been asked to make a tool that will convert a interger between 1 and 3999 to a sting of the entered interger as repersented by the roman system.
+
+### setining up to run the code
+you will need to make sure that that you have python 3.5, virtualenv and pip3 are installed and you need to create the `virtualenv -p /usr/bin/python3.5 venu` and then activate useing `sourceW venu/bin/activate`.
+
+|---|---|
+|command| what it dose |
+
 
